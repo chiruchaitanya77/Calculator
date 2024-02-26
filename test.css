@@ -1,0 +1,36 @@
+form{
+    display:grid;
+    background-image: linear-gradient(#12151c
+    ,#191d26,indigo);
+    margin:250px;
+    padding:10px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  input{
+    border: 0px;
+    width: 60px;
+    height: 60px; 
+    font-size: 30px;
+    border-radius: 30%;
+    background:lightblue;
+    margin: 5px;
+  }
+  #res{
+    border-radius:0% ;
+    width: 280px;
+    
+  }
+  
+  #p:hover{
+    transform: translateY(-5px);
+  }
+  
+  #p:active {
+    transform: translateY(0px);
+    background: lightgreen;
+    }
+  #p{
+    background-image: linear-gradient(#e4fff6,#e3ffd7,#ddc2ff,#cdd3ff,#ffdcf1)
+  }

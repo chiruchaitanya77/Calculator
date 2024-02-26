@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="test.css">
+<body>
+ <form id="main">
+ <div><input type="text" id="res" readonly></div>
+ <div class="row1">
+  <div>
+    <input id="p" type="button" onclick="clearresult('C')" value="C">
+    <input id="p" type="button" onclick="setOperator('%')" value="%">
+    <input id="p" type="button" onclick="backspace('<=')" value="<=">
+    <input id="p" type="button" onclick="setOperator('/')" value="/">
+  </div>
+<div>
+  <input id="p" type="button" onclick="appendNumber(7)" value="7">
+  <input id="p" type="button" onclick="appendNumber(8)" value="8">
+  <input id="p" type="button" onclick="appendNumber(9)" value="9">
+  <input id="p" type="button" onclick="setOperator('*')" value="*">
+</div>
+<div class="row2">
+<div>
+  <input id="p" type="button" onclick="appendNumber(4)" value="4">
+  <input id="p" type="button" onclick="appendNumber(5)" value="5">
+  <input id="p" type="button" onclick="appendNumber(6)" value="6">
+  <input id="p" type="button" onclick="setOperator('-')" value="-">
+</div>
+</div>
+<div class="row3">
+<div>
+  <input id="p" type="button" onclick="appendNumber(1)" value="1">
+  <input id="p" type="button" onclick="appendNumber(2)" value="2">
+  <input id="p" type="button" onclick="appendNumber(3)" value="3">
+  <input id="p" type="button" onclick="setOperator('+')" value="+">
+</div>
+<div>
+    <input id="p" type="button" onclick="appendNumber('00')" value="00">
+    <input id="p" type="button" onclick="appendNumber(0)" value="0">
+    <input id="p" type="button" onclick="clearresult('.')" value=".">
+    <input id="p" type="button" onclick="calculate('=')" value="=">
+  </div>
+</div>
+ </div>
+ </form>
+</body>
+<script src="calc.js"></script>
+</html>
